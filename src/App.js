@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import firebase from 'firebase'
+import FileUpload from './FileUpload'
 import './App.css'
 
 class App extends Component {
@@ -38,6 +39,7 @@ class App extends Component {
              Hola {this.state.user.displayName}
           </p>
           <button onClick={this.handleLogout.bind(this)}>Cerrar sesion</button>
+          <FileUpload />
         </div>
       )
     } else {
